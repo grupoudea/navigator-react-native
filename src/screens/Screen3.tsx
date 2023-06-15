@@ -8,7 +8,7 @@ interface Props extends StackScreenProps<any, any> {}
 const Screen3 = ({navigation} : Props) => {
   return (
     <View style={styles.globalMargin}>
-        <Text>Tab 3</Text>
+        <Text style={styles.title}>Tab 3</Text>
         <Button title="Regresar" onPress={() => navigation.pop() }></Button>
 
         <Button title="Regresar a screen 1" onPress={() => navigation.popToTop() }></Button>
