@@ -23,6 +23,15 @@ const Screen1 = ({navigation}: Props) => {
           <Text style={styles.title}>Pedro</Text>
         </TouchableOpacity> 
 
+        <TouchableOpacity 
+          style={{backgroundColor: '#d3d3d3'}}
+          onPress={() => navigation.navigate('PersonScreen', {
+            id: 2,
+            nombre: 'Kelly'
+          })} >
+          <Text style={styles.title}>Kelly</Text>
+        </TouchableOpacity>
+
     </View>
   )
 }

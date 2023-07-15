@@ -4,14 +4,19 @@ import { Button, Text, View } from 'react-native'
 import { styles } from '../theme/AppTheme'
 import { useEffect } from 'react';
 
+interface RouterParams {
+    id: number;
+    nombre: string;
+}
+
 interface Props extends StackScreenProps<any, any>{};
 
 const PersonScreen = ({navigation, route}: Props) => {   
-    const params = route.params;
+    const params = route.params as RouterParams;
 
     useEffect(() => {
         navigation.setOptions({
-            title: params!.nombre
+            title: params.nombre
         })
 
     })
