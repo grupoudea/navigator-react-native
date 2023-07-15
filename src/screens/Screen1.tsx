@@ -2,11 +2,14 @@ import { StackScreenProps } from '@react-navigation/stack';
 import React from 'react'
 import { Button, Text, TouchableOpacity, View } from 'react-native'
 import { styles } from '../theme/AppTheme';
+import { DrawerScreenProps } from '@react-navigation/drawer';
 
-interface Props extends StackScreenProps<any, any> {}
+interface Props extends DrawerScreenProps<any, any> {}
 
 
 const Screen1 = ({navigation}: Props) => {
+
+  
   
 
   return (

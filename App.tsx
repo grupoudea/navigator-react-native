@@ -9,8 +9,7 @@ import { DrawerNavigator } from './src/navigation/DrawerNavigator';
 const App = () => {
   return (
     <NavigationContainer>
-      {/*<StackNavigator />*/}
-      <DrawerNavigator />
+      <StackNavigator />
     </NavigationContainer>
   )
 }
