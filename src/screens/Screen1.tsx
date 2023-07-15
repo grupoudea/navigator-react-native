@@ -14,23 +14,27 @@ const Screen1 = ({navigation}: Props) => {
         <Text style={styles.title}>Tab 1</Text>
         <Button title="Go to Tab2" onPress={() => navigation.navigate('Screen2')}></Button>
         <Text style={styles.title}>Navegar con argumentos</Text>
-        <TouchableOpacity 
-          style={{backgroundColor: '#d3d3d3'}}
-          onPress={() => navigation.navigate('PersonScreen', {
-            id: 1,
-            nombre: 'Pedro'
-          })} >
-          <Text style={styles.title}>Pedro</Text>
-        </TouchableOpacity> 
 
-        <TouchableOpacity 
-          style={{backgroundColor: '#d3d3d3'}}
-          onPress={() => navigation.navigate('PersonScreen', {
-            id: 2,
-            nombre: 'Kelly'
-          })} >
-          <Text style={styles.title}>Kelly</Text>
-        </TouchableOpacity>
+        <View style={{flexDirection: 'row'}}>
+          <TouchableOpacity 
+            style={{...styles.botonGrande, backgroundColor: '#5856d6' }}
+            onPress={() => navigation.navigate('PersonScreen', {
+              id: 1,
+              nombre: 'Pedro'
+            })} >
+            <Text style={styles.botonGrandeTexto}>Pedro</Text>
+          </TouchableOpacity> 
+
+          <TouchableOpacity 
+            style={styles.botonGrande}
+            onPress={() => navigation.navigate('PersonScreen', {
+              id: 2,
+              nombre: 'Kelly'
+            })} >
+            <Text style={styles.botonGrandeTexto}>Kelly</Text>
+          </TouchableOpacity>
+        </View>
+        
 
     </View>
   )

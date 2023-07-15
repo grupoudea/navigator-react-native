@@ -6,7 +6,15 @@ import Screen2 from '../screens/Screen2';
 import Screen3 from '../screens/Screen3';
 import PersonScreen from '../screens/PersonScreen';
 
-const Stack = createStackNavigator();
+export type RootStackParams = {
+  Screen1: undefined,
+  Screen2: undefined,
+  Screen3: undefined,
+  PersonScreen: {id: number, nombre: string},
+
+}
+
+const Stack = createStackNavigator<RootStackParams>();
 
 const StackNavigator = ()=> {
   return (

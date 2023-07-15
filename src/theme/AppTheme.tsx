@@ -7,5 +7,19 @@ export const styles = StyleSheet.create({
     title:{
         fontSize: 30,
         color: 'black'
+    },
+    botonGrande: {
+        width: 100,
+        height: 100,
+        backgroundColor: 'red',
+        borderRadius: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginHorizontal: 10
+    },
+    botonGrandeTexto: {
+        color: 'white',
+        fontSize: 18,
+        fontWeight: 'bold'
     }
 });
