@@ -9,7 +9,6 @@ import { DrawerNavigator } from './DrawerNavigator';
 import { CustomDrawerNavigator } from './CustomDrawerNavigator';
 
 export type RootStackParams = {
-  Root: undefined,
   Screen1: undefined,
   Screen2: undefined,
   Screen3: undefined,
@@ -33,6 +32,7 @@ const StackNavigator = ()=> {
             }
         }}
     >
+      <Stack.Screen name="Screen1" component={Screen1} />
       <Stack.Screen name="Screen2" component={Screen2} />
       <Stack.Screen name="Screen3" component={Screen3} />
       <Stack.Screen name="PersonScreen" component={PersonScreen} />

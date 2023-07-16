@@ -20,8 +20,8 @@ export const CustomDrawerNavigator = () => {
       }}
       drawerContent={(props) => <DrawerContent {...props} /> }
       >
-      <Drawer.Screen name="Tabs" options={{title:'HomeT'}} component={TabsNavigator} />
-      <Drawer.Screen name="SettingsScreen" options={{title: 'Settings'}} component={SettingsScreen} />
+      <Drawer.Screen name="Tabs" component={TabsNavigator}  options={{headerShown:false}}/>
+      <Drawer.Screen name="SettingsScreen" component={SettingsScreen} />
     </Drawer.Navigator>
   );
 }
