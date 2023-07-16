@@ -12,3 +12,6 @@ npx react-native run-android
 
 npm install @react-navigation/native
 
+
+## URL REACT NAVIGATION
+https://reactnavigation.org/docs/bottom-tab-navigator/

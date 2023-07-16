@@ -33,7 +33,6 @@ const StackNavigator = ()=> {
             }
         }}
     >
-      <Stack.Screen name="Root" component={CustomDrawerNavigator} options={{ headerShown: false }}/>
       <Stack.Screen name="Screen2" component={Screen2} />
       <Stack.Screen name="Screen3" component={Screen3} />
       <Stack.Screen name="PersonScreen" component={PersonScreen} />
