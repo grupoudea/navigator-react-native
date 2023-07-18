@@ -15,3 +15,8 @@ npm install @react-navigation/native
 
 ## URL REACT NAVIGATION
 https://reactnavigation.org/docs/bottom-tab-navigator/
+
+## ICONOS
+
+https://ionic.io/ionicons/
+https://github.com/oblador/react-native-vector-icons

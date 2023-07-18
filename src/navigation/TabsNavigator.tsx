@@ -7,6 +7,9 @@ import StackNavigator from './StackNavigator';
 import { styles } from '../theme/AppTheme';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Text } from 'react-native';
+import { TopTabNavigator } from './TopTabNavigator';
+import Icon from 'react-native-vector-icons/Ionicons';
+
 
 
 const Tab = createMaterialBottomTabNavigator();
@@ -24,29 +27,25 @@ export const TabsNavigator = () => {
         let iconName: string = '';
           switch( route.name ) {
             case 'Tab1Screen':
-              // iconName = 'bandage-outline'
-              iconName = 't1'
+              iconName = 'bandage-outline'
             break;
 
             case 'Tab2Screen':
-              // iconName = 'basketball-outline'bandage-outline'
-              iconName = 't2'
+              iconName = 'basketball-outline'
             break;
 
             case 'StackNavigator':
-              // iconName = 'bookmarks-outline'
-              iconName = 'sn'
+              iconName = 'bookmarks-outline'
             break;
           }
 
-        /*return <Icon name={ iconName } size={ 20 } color={ color } />*/
-        return <Text style={{color: color}}>{iconName}</Text>
+        return <Icon name={ iconName } size={ 20 } color={ color } />
       }
     })}
     
     >
       <Tab.Screen name="Tab1Screen" options={{ title: 'Tab1' }} component={Tab1Screen} />
-      <Tab.Screen name="Tab2Screen" options={{ title: 'Tab2' }} component={Tab2Screen} />
+      <Tab.Screen name="Tab2Screen" options={{ title: 'Tab2' }} component={TopTabNavigator} />
       <Tab.Screen name="StackNavigator" options={{ tabBarLabel: 'Stack' }} component={StackNavigator} />
     </Tab.Navigator>
   );
