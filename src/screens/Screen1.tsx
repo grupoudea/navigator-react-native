@@ -1,4 +1,3 @@
-import { StackScreenProps } from '@react-navigation/stack';
 import React, { useEffect } from 'react'
 import { Button, Text, TouchableOpacity, View } from 'react-native'
 import { colores, styles } from '../theme/AppTheme';
@@ -28,11 +27,9 @@ const Screen1 = ({navigation}: Props) => {
             </TouchableOpacity>
         )
     })
+  }, [])
 
 
-}, [])
-
-  
   
 
   return (

@@ -3,6 +3,7 @@ import { AuthState } from "./AuthContext";
 type AuthAction = 
     | {type: 'signIn'}
     | {type: 'changeFavIcon', payload: string}
+    | {type: 'changeUserName', payload: string}
 
 export const authReducer = (state: AuthState, action: AuthAction): AuthState => {
 
@@ -17,6 +18,11 @@ export const authReducer = (state: AuthState, action: AuthAction): AuthState => 
             return {
                 ...state,
                 favoriteIcon: action.payload
+            }
+        case "changeUserName":
+            return {
+                ...state,
+                username: action.payload
             }
     }
 
